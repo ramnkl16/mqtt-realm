@@ -1,0 +1,14 @@
+{
+  "name": "mqtt-realm",
+  "version": "1.0.0",
+  "description": "An application with RealmDB, MQTT client and server, and sample CRUD operations.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "realm": "^10.7.0",
+    "mqtt": "^4.2.8",
+    "express": "^4.17.1"
+  }
+}
