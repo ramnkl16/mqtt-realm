@@ -71,3 +71,14 @@
      "id": "ObjectId"
    }
    ```
+
+## Note on Deprecated Dependencies
+
+The following dependencies have been deprecated and replaced with newer versions:
+
+- `har-validator@5.1.5`: This library is no longer supported.
+- `glob@7.2.3`: Glob versions prior to v9 are no longer supported.
+- `uuid@3.4.0`: Please upgrade to version 7 or higher. Older versions may use Math.random() in certain circumstances, which is known to be problematic. See https://v8.dev/blog/math-random for details.
+- `request@2.88.2`: Request has been deprecated, see https://github.com/request/request/issues/3142.
+- `node-domexception@1.0.0`: Use your platform's native DOMException instead.
+- `realm@10.24.0`: This version uses Atlas Device Sync, please install `realm@community` and read https://github.com/realm/realm-js/blob/main/DEPRECATION.md for more information.
